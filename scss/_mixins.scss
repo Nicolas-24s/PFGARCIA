@@ -1,0 +1,48 @@
+//Extend
+
+.bg_portada{
+    width: 100%;
+    height: 39rem;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.textoPortada{
+    color: peru;
+    padding: 3rem;
+}
+
+.container_index{
+    margin: 2.5rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    border-radius: 2rem;
+    border-style: groove;
+    margin: 2rem;
+}
+
+
+//MIXIN
+
+@mixin texto($size, $color, $text-align){
+    font-size: $size;
+    color: $color;
+    padding: 0.5rem;
+    text-align: $text-align;
+};
+
+@mixin flex ($direccion, $justify, $align, $wrap){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap:$wrap;
+}

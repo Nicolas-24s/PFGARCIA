@@ -1,0 +1,24 @@
+{
+  "name": "pag-godburger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/estilos.scss estilos/estilos.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicolas-24s/SegundaEntregaCoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicolas-24s/SegundaEntregaCoder/issues"
+  },
+  "homepage": "https://github.com/Nicolas-24s/SegundaEntregaCoder#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}

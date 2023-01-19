@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg_sandybrown{
+    background-color: $primerColor;
+}
+
+.padding_cero{
+    padding: 0;
+}
+
+.nav-item{
+    padding: 0rem 2rem;
+}
+
+.text_nav{
+    font-size: 20px;
+}
+
+.jc_center{
+    justify-content: center;
+}
+
+.bg_index{
+    @extend .bg_portada;
+    background-image: url(../img/index/fondoInicio.jpg);
+    background-position-y:center ;
+    div{
+        padding: 3rem;
+        h1{
+            color: $portadaColor;
+        }
+        h2{
+            color: whitesmoke;
+        }
+    }
+}
+
+h3{
+    @include texto ($fontL, whitesmoke, center);
+    background-color:$primerColor;
+}
+
+.container_index{
+    @extend .container_index;
+    div{
+        @extend .card;
+        background-color: $segundoColor;
+        h4{
+            @include texto ($fontM,$portadaColor,center)
+        }
+        img{
+            padding: 15px;
+        }
+        p{
+            @include texto ($fontS, $portadaColor,left) 
+        }
+    }
+
+}
+
+// MENU
+
+.bg_menu{
+    @extend .bg_portada;
+    background-image: url(../img/menu/fondoMenu..jpg);
+    background-position-y: inherit;
+    background-position-x: center;
+    div{
+        // padding: 3rem;
+        h1{
+            @extend .textoPortada;
+        }
+    }
+}
+
+.card-texto{
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.precio{
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.bg_black{
+    background-color: $segundoColor;
+    color: $portadaColor;
+}
+
+.img_bebida {
+    max-height: 12rem;
+    padding: 0rem 3rem;
+}
+
+// CONOCENOS
+
+.bg_conocenos{
+    @extend .bg_portada;
+    background-image: url(../img/conocenos/portada.jpg);
+    background-position-y: center;
+    div{
+        // padding: 3rem;
+        h1{
+            @extend .textoPortada;
+        }
+    }
+}
+
+.container_con{
+    @include flex (row, space-evenly,center,wrap);
+    padding: 3rem;
+    border-radius: 1rem;
+    // background-color: $segundoColor;
+    div{
+        padding: 1rem;
+        img{
+            max-width: 50rem;
+            border-radius: 2rem;
+            object-fit: cover;
+        }
+    }
+    div{
+        p{
+            @include texto(22px,$segundoColor,center);
+            max-width: 33rem;
+        }
+    }
+
+}
+
+//COMIENZA FRANQUICIA
+
+.bg_franquicia{
+    @extend .bg_portada;
+    background-image: url(../img/franquicia/franquicia1.png);
+    h1{
+        @extend .textoPortada;
+
+    }
+}
+
+#franquicia{
+    div{
+        div{
+            h2{
+                @include texto($fontXL,$portadaColor,left);
+            }
+            p{
+                @include texto($fontM,$segundoColor,left);
+                color: #999;
+            }
+        }
+        div{
+            img{
+                max-width: 15rem;
+                border-radius: 6rem;
+                background-color: $segundoColor;
+            }
+        }
+    }
+}
+
+
+// IMG 
+// max-width: 14rem;
+// border-radius: 5rem;
+// border-color: black;
+// background-color: black;

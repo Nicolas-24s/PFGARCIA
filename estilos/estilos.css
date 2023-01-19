@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500&family=Nanum+Gothic:wght@400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+.bg_portada, .bg_franquicia, .bg_conocenos, .bg_menu, .bg_index {
+  width: 100%;
+  height: 39rem;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.textoPortada, .bg_franquicia h1, .bg_conocenos div h1, .bg_menu div h1 {
+  color: peru;
+  padding: 3rem;
+}
+
+.container_index {
+  margin: 2.5rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card, .container_index div {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  border-radius: 2rem;
+  border-style: groove;
+  margin: 2rem;
+}
+
+footer {
+  background-color: lightslategray;
+  margin-top: 2rem;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer div div {
+  margin: 0rem 2rem;
+  padding: 1.5rem 2.5rem;
+  align-self: center;
+  display: inline;
+}
+footer div div {
+  text-align: center;
+}
+footer div div div a img {
+  width: 5.5rem;
+  padding: 1rem;
+}
+
+footer div ul {
+  padding: 0rem;
+  list-style: none;
+  text-align: left;
+}
+
+.footer2 {
+  background-color: rgb(113, 128, 143);
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg_sandybrown {
+  background-color: sandybrown;
+}
+
+.padding_cero {
+  padding: 0;
+}
+
+.nav-item {
+  padding: 0rem 2rem;
+}
+
+.text_nav {
+  font-size: 20px;
+}
+
+.jc_center {
+  justify-content: center;
+}
+
+.bg_index {
+  background-image: url(../img/index/fondoInicio.jpg);
+  background-position-y: center;
+}
+.bg_index div {
+  padding: 3rem;
+}
+.bg_index div h1 {
+  color: peru;
+}
+.bg_index div h2 {
+  color: whitesmoke;
+}
+
+h3 {
+  font-size: 3rem;
+  color: whitesmoke;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: sandybrown;
+}
+
+.container_index div {
+  background-color: black;
+}
+.container_index div h4 {
+  font-size: 1.5rem;
+  color: peru;
+  padding: 0.5rem;
+  text-align: center;
+}
+.container_index div img {
+  padding: 15px;
+}
+.container_index div p {
+  font-size: 1rem;
+  color: peru;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.bg_menu {
+  background-image: url(../img/menu/fondoMenu..jpg);
+  background-position-y: inherit;
+  background-position-x: center;
+}
+.card-texto {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.precio {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.bg_black {
+  background-color: black;
+  color: peru;
+}
+
+.img_bebida {
+  max-height: 12rem;
+  padding: 0rem 3rem;
+}
+
+.bg_conocenos {
+  background-image: url(../img/conocenos/portada.jpg);
+  background-position-y: center;
+}
+.container_con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+.container_con div {
+  padding: 1rem;
+}
+.container_con div img {
+  max-width: 50rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+.container_con div p {
+  font-size: 22px;
+  color: black;
+  padding: 0.5rem;
+  text-align: center;
+  max-width: 33rem;
+}
+
+.bg_franquicia {
+  background-image: url(../img/franquicia/franquicia1.png);
+}
+#franquicia div div h2 {
+  font-size: 4rem;
+  color: peru;
+  padding: 0.5rem;
+  text-align: left;
+}
+#franquicia div div p {
+  font-size: 1.5rem;
+  color: black;
+  padding: 0.5rem;
+  text-align: left;
+  color: #999;
+}
+#franquicia div div img {
+  max-width: 15rem;
+  border-radius: 6rem;
+  background-color: black;
+}
+
+/*# sourceMappingURL=estilos.css.map */

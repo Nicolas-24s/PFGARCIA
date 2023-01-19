@@ -1,0 +1,33 @@
+footer{
+    background-color: lightslategray;
+    margin-top: 2rem ;
+    div{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        div{
+            margin: 0rem 2rem;
+            padding: 1.5rem 2.5rem;
+            align-self: center;
+            display: inline;
+        }
+        div{
+            text-align: center;
+            div a img{
+                width: 5.5rem;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+footer div ul{
+    padding: 0rem;
+    list-style: none;
+    text-align: left;
+}
+
+.footer2{
+    background-color: $footerColor2;
+    display: block;
+}
