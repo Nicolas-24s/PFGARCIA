@@ -69,16 +69,22 @@ h3{
     background-position-y: inherit;
     background-position-x: center;
     div{
-        // padding: 3rem;
         h1{
             @extend .textoPortada;
         }
     }
 }
 
-.card-texto{
-    margin-bottom: 0;
-    text-align: left;
+.card-body{
+    h5{
+        margin-bottom: 1REM;
+        text-align: left;
+        text-decoration: underline;
+    }
+    p{
+        margin-bottom: 1REM;
+        text-align: left;
+    };
 }
 
 .precio{
@@ -103,7 +109,6 @@ h3{
     background-image: url(../img/conocenos/portada.jpg);
     background-position-y: center;
     div{
-        // padding: 3rem;
         h1{
             @extend .textoPortada;
         }
@@ -114,7 +119,6 @@ h3{
     @include flex (row, space-evenly,center,wrap);
     padding: 3rem;
     border-radius: 1rem;
-    // background-color: $segundoColor;
     div{
         padding: 1rem;
         img{
@@ -132,14 +136,16 @@ h3{
 
 }
 
-//COMIENZA FRANQUICIA
+//TERMINA CONOCENOS
+
+// FRANQUICIA
 
 .bg_franquicia{
     @extend .bg_portada;
     background-image: url(../img/franquicia/franquicia1.png);
     h1{
         @extend .textoPortada;
-
+        
     }
 }
 
@@ -147,22 +153,77 @@ h3{
     div{
         div{
             h2{
-                @include texto($fontXL,$portadaColor,left);
+                @include texto($fontL,$portadaColor,left);
             }
             p{
-                @include texto($fontM,$segundoColor,left);
-                color: #999;
+                @include texto($fontXM,$segundoColor,left);
+                color: #727272;
             }
         }
         div{
             img{
-                max-width: 15rem;
+                max-width: 16rem;
                 border-radius: 6rem;
                 background-color: $segundoColor;
             }
         }
     }
 }
+
+
+
+.carrousel{
+    margin: 3rem 32rem;
+}
+
+.titulo_carrousel{
+    h5{
+        @include texto ($fontXL,$footerColor2,center);
+        padding: 0rem;
+    }
+    h6{
+        @include  texto ($fontM,$segundoColor, center);
+        padding: 0rem;
+    }
+}
+
+.parrafo_carrousel{
+    p{
+        @include texto ($fontS,#727272,center);
+        padding: 0rem 6rem;
+    }
+    div{
+        text-align: center;
+        
+    }
+}
+
+#formulario{
+    padding: 2rem 3rem;
+    margin: 2rem 8rem;
+    border-radius: 1rem;
+    border: groove;
+    div{
+        p{
+            @include texto ($fontXM, $primerColor,center);
+            text-decoration: underline;
+        }
+    }
+}
+
+//TERMINA FRANQUICIA
+
+//COMIENZA TRABAJA CON NOSOTROS
+
+.bg_trabajaConNosotros{
+    @extend .bg_portada;
+    background-image: url(../img/trabajaConNosotros/trabajaConNosotros.jpg);
+    h1{
+        @extend .textoPortada
+    }
+}
+
+ 
 
 
 // IMG 

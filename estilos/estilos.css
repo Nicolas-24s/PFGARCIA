@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500&family=Nanum+Gothic:wght@400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap");
-.bg_portada, .bg_franquicia, .bg_conocenos, .bg_menu, .bg_index {
+.bg_portada, .bg_trabajaConNosotros, .bg_franquicia, .bg_conocenos, .bg_menu, .bg_index {
   width: 100%;
   height: 39rem;
   background-size: cover;
@@ -7,7 +7,7 @@
   object-fit: cover;
 }
 
-.textoPortada, .bg_franquicia h1, .bg_conocenos div h1, .bg_menu div h1 {
+.textoPortada, .bg_trabajaConNosotros h1, .bg_franquicia h1, .bg_conocenos div h1, .bg_menu div h1 {
   color: peru;
   padding: 3rem;
 }
@@ -113,7 +113,7 @@ h3 {
   background-color: black;
 }
 .container_index div h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: peru;
   padding: 0.5rem;
   text-align: center;
@@ -122,7 +122,7 @@ h3 {
   padding: 15px;
 }
 .container_index div p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: peru;
   padding: 0.5rem;
   text-align: left;
@@ -133,8 +133,13 @@ h3 {
   background-position-y: inherit;
   background-position-x: center;
 }
-.card-texto {
-  margin-bottom: 0;
+.card-body h5 {
+  margin-bottom: 1REM;
+  text-align: left;
+  text-decoration: underline;
+}
+.card-body p {
+  margin-bottom: 1REM;
   text-align: left;
 }
 
@@ -186,22 +191,101 @@ h3 {
   background-image: url(../img/franquicia/franquicia1.png);
 }
 #franquicia div div h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: peru;
   padding: 0.5rem;
   text-align: left;
 }
 #franquicia div div p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: black;
   padding: 0.5rem;
   text-align: left;
-  color: #999;
+  color: #727272;
 }
 #franquicia div div img {
-  max-width: 15rem;
+  max-width: 16rem;
   border-radius: 6rem;
   background-color: black;
+}
+
+.carrousel {
+  margin: 3rem 32rem;
+}
+
+.titulo_carrousel h5 {
+  font-size: 4rem;
+  color: rgb(113, 128, 143);
+  padding: 0.5rem;
+  text-align: center;
+  padding: 0rem;
+}
+.titulo_carrousel h6 {
+  font-size: 2rem;
+  color: black;
+  padding: 0.5rem;
+  text-align: center;
+  padding: 0rem;
+}
+
+.parrafo_carrousel p {
+  font-size: 1.3rem;
+  color: #727272;
+  padding: 0.5rem;
+  text-align: center;
+  padding: 0rem 6rem;
+}
+.parrafo_carrousel div {
+  text-align: center;
+}
+
+#formulario {
+  padding: 2rem 3rem;
+  margin: 2rem 8rem;
+  border-radius: 1rem;
+  border: groove;
+}
+#formulario div p {
+  font-size: 1.4rem;
+  color: sandybrown;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.bg_trabajaConNosotros {
+  background-image: url(../img/trabajaConNosotros/trabajaConNosotros.jpg);
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  #form {
+    padding: 1rem 2rem;
+  }
+  #form div {
+    display: block;
+  }
+  .bg_portada, .bg_index, .bg_menu, .bg_conocenos, .bg_franquicia, .bg_trabajaConNosotros {
+    background-position: cover;
+    height: 22rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .container_con {
+    padding: 1rem;
+  }
+  .container_con div {
+    padding: 0;
+  }
+  .container_con div img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  #form {
+    display: inline;
+  }
+  footer div div {
+    margin: 0rem;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

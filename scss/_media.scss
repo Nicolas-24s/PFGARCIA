@@ -1,0 +1,44 @@
+@media (min-width:350px) and (max-width:768px){
+    #form{
+        padding: 1rem 2rem;
+        div{
+            display: block;
+        }
+    }
+        .bg_portada{
+            background-position: cover;
+            height: 22rem;
+        }
+
+        h3{
+            font-size: $fontM;
+        }
+
+    // Conocenos
+
+        .container_con{
+            padding: 1rem;
+            div{
+                padding: 0;
+                img{
+                    width: 100%;
+                    border-radius: .5rem;
+                }
+            }
+        }   
+
+    // trabaja con nosotros
+
+        #form{
+            display: inline;
+        }
+
+    // footer movil
+    footer{
+        div{
+            div{
+                margin: 0rem;
+            }
+        }
+    }
+};
